@@ -1,0 +1,286 @@
+/* *
+{
+    box-sizing: border-box;
+} */
+
+body
+{
+    max-width: 1366px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: auto;
+}
+
+nav
+{
+    border-bottom-style: solid;
+    border-color: midnightblue;
+    width: 100%;
+    height: auto;
+}
+
+.sticky
+{
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 1366px;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+}
+
+p.afterclass::after
+{
+    content: "";
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: brown;
+    margin: 0 auto;
+}
+
+
+img
+{
+    display: inline-block;
+}
+
+a.navlink
+{
+    vertical-align: top;
+    display: inline-block;
+    margin-top:15px;
+    margin-left: 50px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 25px 20px;
+}
+
+a.navlink:hover
+{
+    background-color: lightblue;
+    text-shadow: 5px 5px 3px grey;
+}
+
+form
+{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+input.navemail
+{
+    height: 25px;
+    border-radius: 7px;
+}
+
+button.searchbtn
+{
+    width: 40px;
+    height: 25px;
+    border-radius: 7px;
+}
+
+button.searchbtn:hover
+{
+    width: 42px;
+    height: 27px;
+    background-color: teal;
+}
+
+div.imgshowcase
+{
+    position: relative;
+    margin: 0 auto;
+}
+
+/* p.showcasep::before
+{
+    margin-top: 100px;
+    content: " ";
+    color: #ffff;
+} */
+
+div.showcasetext
+{
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 25px;
+}
+
+fieldset.storehistory
+{
+    position: relative;
+    margin: 0px 60px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: 3px solid black;  
+    /* z-index: -1; */
+}
+
+p.containerp::before
+{
+    content: open-quote;
+}
+p.containerp::after
+{
+    content: close-quote;
+}
+
+h3::after
+{
+    content: " ";
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: #000000;
+    margin: auto;
+    margin-top: 8px;
+}
+
+
+img.storeimg
+{
+    display: inline-block;
+    border-radius: 10px;
+    margin-left: 20px;
+    padding: auto;
+}
+div.history
+{
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+    margin: 15px 50px;
+    padding: auto;
+}
+/* tailwind */
+
+.grid
+{
+    margin-top: 30px;
+    margin-left: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 100px;
+    align-items: center;
+}
+
+.grid >article
+{
+    background: gainsboro;
+    border: none;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    width: 280px;
+    transition: transform .5s;
+}
+
+.grid >article:hover
+{
+    transform: translateY(5px);
+    box-shadow: 2px 2px 26px rgba(0, 0, 0, 0.8);
+}
+
+.grid >article img
+{
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.containertext
+{
+    padding: 0px 20px 20px;
+    text-align: center;
+}
+
+.containertext > button.containerbtn
+{
+    text-decoration: underline ;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    padding: 10px;
+    font-size: 12pt;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .grid
+    {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 40px;
+    }
+    fieldset.storehistory
+    {
+        margin: 0px 50px;
+    }
+}
+
+@media (max-width: 375px) {
+    .grid
+    {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 40px;
+    }
+    fieldset.storehistory
+    {
+        margin: 0px 35px;
+    }
+}
+
+footer
+{
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0px 15px;
+}
+
+div.containerft
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+div.aboutus
+{
+    flex-basis: 450px;
+}
+
+div.contactus > ul > li > a.footerlink
+{
+    text-decoration: none;
+    color: black;
+    text-decoration: underline;
+}
+
+div.contactus > ul
+{
+    list-style: none;
+    margin-left: -40px;
+}
+
+div.sociallink > i
+{
+    font-size: 40pt;
+    padding-bottom: 15px;
+}
+div.sociallink > i:hover
+{
+    opacity: 0.6;
+    cursor: pointer;
+}

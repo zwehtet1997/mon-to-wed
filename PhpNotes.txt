@@ -1,0 +1,72 @@
+Php Data Type
+-------------
+String
+Integer
+Float
+Boolean
+
+define("name",value)     > Constant Variable
+
+Php Variable
+------------
+$a = "mg mg";
+$b = 100;
+
+Conditional Statement
+---------------------
+One Way         >   if
+Two Way         >   if  -   else
+Multi Way       >   if  -   elseif      - else
+Switch  condition
+
+Loop
+----
+While Loop          >   loop block by block untile codition is true
+-------------------------------------------------------------------
+Start Point(initial)($a=1;)                 1
+Check Condtion($a <= 5)                     2       5       8       11      14      
+Code(User want to work)(echo $a;)           3       6       9       12      15
+Increasement ($a++;)                        4       7       10      13      16
+------------------------------------------------------------------------------
+
+Do While loop       >   True or false, it can work once - repeat the 
+                        loop untile condition true
+------------------------------------------------------------------------------
+Start Point(initial)($a=1;) 
+do{ (do loop)
+Code (User Want to work)
+Increasement} ($a++;)
+While($a <= 0) (condition)
+
+
+For loop            >   loop number of time
+Foreach loop        >   looping array
+
+Function
+--------
+return
+noreturn
+
+Class/object
+-----
+Constructor
+Inheritance (Parent and child class)
+Abstract
+
+
+Session(Transfer Data to another document)
+------------------------------------------
+Session_start();
+Session_destroy();
+Session_unset();
+unset($_SESSION["sessionname"]);
+$_SESSION["sessionname"] = "Values";
+
+
+Session_Start();
+
+Cookie(Set Data with timer)
+--------
+$cookie_name="username";
+$cookie_value="Mg Mg";
+setcookie(name, value, expire, path, domain, secure, http)

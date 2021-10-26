@@ -1,0 +1,151 @@
+<html lang="en">
+<head>
+    <title>HomePage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="HomePage.css">
+
+    <script src="https://kit.fontawesome.com/e0bab58c31.js" crossorigin="anonymous"></script>
+
+    <!-- Connect Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="waypoints/lib/jquery.waypoints.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav>
+        <img src="Logo.PNG" width="150px" height="100px" style="padding-top: 5px; margin-left: 5px;">
+        <a href="" class="navlink">HomePage</a>
+        <a href="CustomerRegister.php" class="navlink">Sign Up</a>
+        <a href="CustomerLogin.php" class="navlink">Sign In</a>
+        <a href="ProductDisplay.php" class="navlink">ProductDisplay</a>
+        <a href="Logout.php" class="navlink">Log Out</a>
+        <form action="" class="searchbar">
+            <input type="text" name="txtsearch" id="searchbox" placeholder="Search...." class="navemail">
+            <button type="submit" class="searchbtn"><i class="fas fa-search"></i></button>
+        </form>
+    </nav>
+
+    <div class="imgshowcase">
+        <img src="showcase.webp" style="width: 100%; height: 550px;">
+        <div class="showcasetext">
+            <h1 style="font-family: 'Fredoka One', cursive;" class="topheader">Welcome To Our Shop</h1>
+            <p class="showcasep">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quisquam necessitatibus atque temporibus cum minima illum itaque explicabo laboriosam at officiis similique, quaerat impedit obcaecati non culpa perferendis quam illo.</p>
+        </div>
+    </div>
+
+    <p class="afterclass">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui fugit aspernatur possimus in, animi ex dolor assumenda architecto velit? Provident dignissimos nisi nihil nulla voluptate. Eveniet excepturi architecto at inventore!</p>
+
+
+
+    <h1 align="center" style="text-decoration: underline; font-family: 'Pacifico', cursive;">To Our Shop</h1>
+        <section class="imgshowcase">
+            <fieldset class="storehistory">
+                <img src="Store1.jpg"  width="250px" height="250px" class="storeimg">
+                <img src="Store2.jpg" width="250px" height="250px" class="storeimg">
+                    <div class="history">
+                        <h3 style="display: inline-block; font-family: 'Patrick Hand', cursive;">Intel Tech Store</h3>
+                        <p style="display: inline-block; font-family: 'Patrick Hand', cursive;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati alias molestiae aperiam voluptatem maiores incidunt! Inventore, nesciunt consequatur quia deleniti maiores suscipit sit veniam tenetur ea, recusandae eaque, rem distinctio!</p>
+                    </div>
+            </fieldset>
+        </section>
+
+    <h1 align="center" style="text-decoration: underline; font-family: 'Pacifico', cursive;">Feature Items</h1>
+    <div class="container">
+        <div class="grid">
+            <article>
+                <img src="msi.jpg" alt="">
+                <div class="containertext">
+                    <h3>MSI Model-001</h3>
+                    <p class="containerp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime provident perferendis nisi earum odio, aliquid beatae accusantium dolorem et aut atque labore modi autem. Quo autem soluta sunt sint odio?</p>
+                    <button class="containerbtn" onclick="window.location.href='ProductDisplay.php'">More Details</button>
+                </div>
+            </article>
+
+            <article>
+                <img src="rog.webp" alt="">
+                <div class="containertext">
+                    <h3>ROG Model-010</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime provident perferendis nisi earum odio, aliquid beatae accusantium dolorem et aut atque labore modi autem. Quo autem soluta sunt sint odio?</p>
+                    <button class="containerbtn" onclick="window.location.href='ProductDisplay.php'">More Details</button>
+                </div>
+            </article>
+
+            <article>
+                <img src="legion.webp" alt="">
+                <div class="containertext">
+                    <h3>Legion Model-021</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime provident perferendis nisi earum odio, aliquid beatae accusantium dolorem et aut atque labore modi autem. Quo autem soluta sunt sint odio?</p>
+                    <button class="containerbtn" onclick="window.location.href='ProductDisplay.php'">More Details</button>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <h1 align="center" style="text-decoration: underline; font-family: 'Pacifico', cursive;">Store Location</h1>
+    <div class="googlemap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2773.783785312968!2d96.17194609310901!3d16.783186931542396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1ecf2ba2e3c13%3A0x428db7550d274e2d!2sChan%20Tha%20Plaza!5e0!3m2!1sen!2smm!4v1628686288863!5m2!1sen!2smm" width="98%" height="400" style="border:1; border-radius: 20px; margin: 0px 10px;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <footer>
+        <div class="containerft">
+
+            <div class="aboutus">
+                <h3 style="text-decoration: underline;">About Us</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, quam dolor non voluptas omnis eaque adipisci suscipit atque similique, dolorum expedita. Numquam rerum, quae accusantium quod nobis veritatis suscipit deserunt.</p>
+            </div>
+
+            <div class="contactus">
+                <h3 style="text-decoration: underline;">Contact Info</h3>
+                <ul>
+                    <li><a href="" class="footerlink">About</a></li>
+                    <li><a href="" class="footerlink">FAQ</a></li>
+                    <li><a href="" class="footerlink">Privacy & Policy</a></li>
+                    <li><a href="" class="footerlink">Help</a></li>
+                    <li><a href="" class="footerlink">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="sociallink">
+                <h3 style="text-decoration: underline;">Social Links</h3>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-instagram-square"></i>
+                <i class="fab fa-linkedin"></i><br>
+                <input type="email" name="txtsubemail" placeholder="Eg: John@email.com">
+                <button class="btnsub">Subscribe</button>
+            </div>
+            
+        </div>
+
+        <p align="center">&copy;CopyRight. All Right Reverse. &reg;Registered.</p>
+    </footer>
+
+    <!-- js dom + jquery -->
+    <script>
+        $(document).ready(function()
+        {
+            $('h1.topheader').click(function()
+            {
+                $(this).css('background-color','#ff0000');
+            });
+
+            $('.imgshowcase').waypoint(function(direction)
+            {
+                if (direction == 'down') 
+                {
+                    $('nav').addClass('sticky');
+                }
+                else
+                {
+                    $('nav').removeClass('sticky');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
